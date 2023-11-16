@@ -27,11 +27,5 @@ def init_test_gen():
 
 
 init_test_gen()
-alphbet = [chr(i) for i in range(ord('a'), ord('z') + 1)] + [chr(i) for i in range(ord('A'), ord('Z') + 1)]
-for i in range(1, 26 * 2 + 1):
-    input_str = str(26 * 4 + 1) + "\n"
-    for c in alphbet:
-        input_str += c + "\n"
-        input_str += c + "\n"
-    input_str += alphbet[i - 1]
-    gen_case(str(i), input_str, "NO")
+# here wrete code that creates your samples as a string then put them into
+# files using gen_case function.
